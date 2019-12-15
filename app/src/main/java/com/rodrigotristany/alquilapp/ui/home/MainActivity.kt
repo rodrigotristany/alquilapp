@@ -1,5 +1,6 @@
 package com.rodrigotristany.alquilapp.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -9,11 +10,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.rodrigotristany.alquilapp.R
+import com.rodrigotristany.alquilapp.ui.detail.DetailActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+    private val adapter : CatalogListAdapter
+
+    init {
+        adapter = CatalogListAdapter { navigateToDetail(it) }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
 
         setTheme(R.style.AppTheme_NoActionBar)
@@ -35,6 +42,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+    }
+
+    private fun navigateToDetail(catalog: CatalogModel) {
+        var intent = Intent(this, DetailActivity::class.java)
+        intent.apply {
+            putExtra("ITEM_ID", catalog.id)
+        }
+        startActivity(intent)
     }
 
     override fun onBackPressed() {

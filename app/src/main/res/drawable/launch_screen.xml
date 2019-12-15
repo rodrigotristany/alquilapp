@@ -7,7 +7,7 @@
     <item>
 
         <bitmap
-                android:src="@drawable/ic_launcher_background"
+                android:src="@drawable/ic_menu_camera"
                 android:gravity="center"/>
 
     </item>
