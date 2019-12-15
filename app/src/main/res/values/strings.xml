@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AlquilApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Menu strings -->
+    <string name="menu_start">Inicio</string>
+    <string name="menu_contact">Contacto</string>
+    <string name="menu_favourites">Favoritos</string>
+    <string name="menu_delete_user">Borrar usuario</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="menu_login">Iniciar sesión</string>
+    <string name="menu_group_general">General</string>
+    <string name="menu_group_user">Usuario</string>
+</resources>
