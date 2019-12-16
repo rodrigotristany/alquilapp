@@ -1,6 +1,6 @@
 package com.rodrigotristany.alquilapp.data.domain
 
-enum class PropertyType {
+enum class EstateType {
     APARTMENT,
     HOUSE,
     SHOP
