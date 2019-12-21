@@ -1,5 +1,6 @@
 package com.rodrigotristany.alquilapp.ui.home
 
+import android.app.Application
 import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -9,12 +10,22 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import com.rodrigotristany.alquilapp.R
 import com.rodrigotristany.alquilapp.ui.detail.DetailActivity
+import com.rodrigotristany.alquilapp.utils.app
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import javax.inject.Inject
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(),
+                     NavigationView.OnNavigationItemSelectedListener,
+                     MainMVPView {
+
+    @Inject
+    lateinit var presenter : MainMVPPresenter
+
+    val component by lazy { app.component.plus(HomeModule(this)) }
 
     private val adapter : CatalogListAdapter
 
@@ -26,11 +37,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setTheme(R.style.AppTheme_NoActionBar)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        component.inject(this)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        fab.setOnClickListener {
+            /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()*/
+            presenter.loadData()
         }
 
         val toggle = ActionBarDrawerToggle(
@@ -101,5 +114,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    override fun showToast(message: String) {
+        Toast.makeText(this, message,Toast.LENGTH_LONG).show()
     }
 }
