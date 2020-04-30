@@ -1,15 +1,12 @@
 package com.rodrigotristany.alquilapp.di
 
-import com.rodrigotristany.alquilapp.AlquilAppApplication
+import android.app.Application
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
 
-//La utiliza dagger para llevar un control de todas las
-//dependencias dentro del código
-
 @Module
-class AppModule(val app: AlquilAppApplication) {
+class ApplicationModule(val app: Application) {
     @Provides
     @Singleton
     @PerApplication

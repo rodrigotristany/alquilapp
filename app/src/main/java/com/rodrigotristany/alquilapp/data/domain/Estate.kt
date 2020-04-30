@@ -1,8 +1,9 @@
 package com.rodrigotristany.alquilapp.data.domain
 
-import com.rodrigotristany.alquilapp.ui.home.CatalogModel
+import com.rodrigotristany.alquilapp.features.estate.list.CatalogModel
 
-class Estate(estateType : EstateType) : CatalogModel {
+class Estate(estateType : EstateType) :
+    CatalogModel {
 
     var address : String = ""
     var description : String = ""

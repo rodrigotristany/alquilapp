@@ -3,28 +3,26 @@
     package="com.rodrigotristany.alquilapp">
 
     <application
+        android:name=".AlquilAppApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".AlquilAppApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".features.estate.favorites.view.FavoritesEstateActivity" />
+        <activity android:name=".features.estate.detail.view.EstateDetailActivity" />
         <activity
-            android:name=".ui.home.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Launcher">
+            android:theme="@style/AppTheme.Launcher"
+            android:name=".features.home.view.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.splash.SplashActivity" />
-        <activity android:name=".ui.detail.DetailActivity" />
-
     </application>
 
 </manifest>

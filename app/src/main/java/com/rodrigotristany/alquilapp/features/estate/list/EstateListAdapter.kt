@@ -1,15 +1,15 @@
-package com.rodrigotristany.alquilapp.ui.home
+package com.rodrigotristany.alquilapp.features.estate.list
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.rodrigotristany.alquilapp.R
 import com.rodrigotristany.alquilapp.utils.inflate
-import kotlinx.android.synthetic.main.catalog_item.view.*
+import kotlinx.android.synthetic.main.item_estate_list.view.*
 import kotlin.properties.Delegates
 
-class CatalogListAdapter(items: List<CatalogModel> = emptyList(), val listener: (CatalogModel) -> Unit)
-    : RecyclerView.Adapter<CatalogListAdapter.ViewHolder>() {
+class EstateListAdapter(items: List<CatalogModel> = emptyList(), val listener: (CatalogModel) -> Unit)
+    : RecyclerView.Adapter<EstateListAdapter.ViewHolder>() {
 
     private var items: List<CatalogModel> by Delegates.observable(items) { _, _, _ ->
         notifyDataSetChanged()
@@ -26,7 +26,7 @@ class CatalogListAdapter(items: List<CatalogModel> = emptyList(), val listener: 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = parent.inflate(R.layout.catalog_item)
+        var view = parent.inflate(R.layout.item_estate_list)
         return ViewHolder(view)
     }
 

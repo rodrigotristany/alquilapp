@@ -1,4 +1,4 @@
-package com.rodrigotristany.alquilapp.ui.home
+package com.rodrigotristany.alquilapp.features.estate.list
 
 interface CatalogModel {
     var id : String
