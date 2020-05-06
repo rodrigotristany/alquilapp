@@ -1,4 +1,4 @@
-package com.rodrigotristany.alquilapp.features.estate.detail.view
+package com.rodrigotristany.alquilapp.features.estate.detail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

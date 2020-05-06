@@ -1,4 +1,4 @@
-package com.rodrigotristany.alquilapp.features.estate.favorites.view
+package com.rodrigotristany.alquilapp.features.estate.favorites
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

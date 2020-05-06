@@ -1,7 +1,7 @@
-package com.rodrigotristany.alquilapp.features.home.di
+package com.rodrigotristany.alquilapp.features.home
 
 import com.rodrigotristany.alquilapp.di.PerActivity
-import com.rodrigotristany.alquilapp.features.home.HomeMVP
+import com.rodrigotristany.alquilapp.features.home.view.HomeMVP
 import com.rodrigotristany.alquilapp.features.home.view.HomePresenter
 import dagger.Module
 import dagger.Provides

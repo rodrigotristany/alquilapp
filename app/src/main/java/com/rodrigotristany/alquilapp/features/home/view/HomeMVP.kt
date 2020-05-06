@@ -1,4 +1,4 @@
-package com.rodrigotristany.alquilapp.features.home
+package com.rodrigotristany.alquilapp.features.home.view
 
 interface HomeMVP {
     interface View {

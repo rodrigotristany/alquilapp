@@ -9,7 +9,7 @@ import androidx.core.view.GravityCompat
 import com.google.android.material.navigation.NavigationView
 import com.rodrigotristany.alquilapp.AlquilAppApplication
 import com.rodrigotristany.alquilapp.R
-import com.rodrigotristany.alquilapp.features.home.di.DaggerHomeComponent
+import com.rodrigotristany.alquilapp.features.home.DaggerHomeComponent
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 

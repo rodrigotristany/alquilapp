@@ -10,8 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".features.estate.favorites.view.FavoritesEstateActivity" />
-        <activity android:name=".features.estate.detail.view.EstateDetailActivity" />
+        <activity android:name=".features.estate.favorites.FavoritesEstateActivity" />
+        <activity android:name=".features.estate.detail.EstateDetailActivity" />
         <activity
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
