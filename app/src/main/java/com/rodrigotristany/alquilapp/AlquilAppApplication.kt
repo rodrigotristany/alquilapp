@@ -1,20 +1,23 @@
 package com.rodrigotristany.alquilapp
 
 import android.app.Application
-import com.rodrigotristany.alquilapp.di.AppComponent
-import com.rodrigotristany.alquilapp.di.AppModule
-import com.rodrigotristany.alquilapp.di.DaggerAppComponent
+import com.rodrigotristany.alquilapp.di.ApplicationComponent
+import com.rodrigotristany.alquilapp.di.ApplicationModule
+import com.rodrigotristany.alquilapp.di.DaggerApplicationComponent
 
 open class AlquilAppApplication : Application() {
-    val component: AppComponent by lazy {
-        DaggerAppComponent
-            .builder()
-            .appModule(AppModule(this))
+    val applicationComponent: ApplicationComponent by lazy {
+        DaggerApplicationComponent.builder()
+            .applicationModule(ApplicationModule(this))
             .build()
     }
 
     override fun onCreate() {
         super.onCreate()
-        component.inject(this)
+        initInjector()
+    }
+
+    private fun initInjector() {
+        applicationComponent.inject(this)
     }
 }
