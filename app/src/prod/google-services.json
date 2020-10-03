@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "220043871122",
+    "firebase_url": "https://alquilapp-ed43b.firebaseio.com",
+    "project_id": "alquilapp-ed43b",
+    "storage_bucket": "alquilapp-ed43b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220043871122:android:d210a950ae2c6fd4",
+        "android_client_info": {
+          "package_name": "com.rodrigotristany.alquilapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220043871122-tr0da0t5uod4af2o3nbjhuvarhqd07ds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgHc6i-jMjRt_xYbYdeMJfIIiP2D52604"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220043871122-tr0da0t5uod4af2o3nbjhuvarhqd07ds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

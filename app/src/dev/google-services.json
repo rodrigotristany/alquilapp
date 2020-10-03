@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "52426720030",
+    "firebase_url": "https://alquilapp-test.firebaseio.com",
+    "project_id": "alquilapp-test",
+    "storage_bucket": "alquilapp-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52426720030:android:bab3df5579477cee5aff0f",
+        "android_client_info": {
+          "package_name": "com.rodrigotristany.alquilapp.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52426720030-m6s4jdv40hglj6sfs2i4o7t4f14m5s1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rodrigotristany.alquilapp.dev",
+            "certificate_hash": "420255cce45df3c201ec86a3b6429a7314fca8e1"
+          }
+        },
+        {
+          "client_id": "52426720030-m3nrkgtjvrbqlhhe3h330mjm6iicef5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEn-uzitxjGHpmympToAGYhnn9GdA2rX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52426720030-m3nrkgtjvrbqlhhe3h330mjm6iicef5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
